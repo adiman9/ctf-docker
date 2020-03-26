@@ -1,0 +1,33 @@
+snippet hi "Code Highlight" b
+{% highlight ${1:lang} linenos%}{% raw %}
+${2:code}
+{% endraw %}{% endhighlight %}
+endsnippet
+
+snippet inhi "Inline Code Highlight" b
+{% ihighlight ${1:lang} %}{% raw %}
+${2:code}
+{% endraw %}{% endihighlight %}
+endsnippet
+
+snippet vid "Youtube Video Embed" b
+{% include video-embed.html videoID="${1:videoID}" %}
+endsnippet
+
+snippet img "Image markdown" b
+![${1:alt}](${2:url}){: class="${3:class}" width="${4:width}" height="${5:height}"}
+endsnippet
+
+snippet urlt "Url with target blank" b
+[${1:text}](${2:url}){: target="_blank"}<!--_-->
+endsnippet
+
+snippet url "url" b
+[${1:text}](${2:url})
+endsnippet
+
+snippet raw "raw liquid" b
+{% raw %}${1:}{% endraw %}
+endsnippet
+
+
